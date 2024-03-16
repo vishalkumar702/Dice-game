@@ -1,0 +1,189 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    /* background-image: url(./images/bcgimg4.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center; */
+    background-color: black;
+}
+
+
+h1{
+    margin: 0 auto;
+    font-size: 3em;
+    word-spacing: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer p{
+    font-size: 1.5em;
+}
+
+.dice{
+    padding: 50px;
+}
+
+
+
+.btn1{
+    height: 50px;
+    width: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: rgb(18, 244, 14);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.btn1:hover{
+    background-color: rgba(18, 220, 55, 0.721);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px){
+    *{
+        float: none;
+        max-height: 100%;
+    }
+
+    .mainContainer{
+        flex-direction: column;
+    }
+
+    .dice{
+        padding: 0;
+    }
+
+    .dice img{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media(max-width:600px){
+
+   .dice img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .mainContainer{
+        gap:50px;
+    }
+
+    .btn1{
+        margin-top: 60px;
+    }
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    position: relative;
+    padding: 0 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: hsl(210deg 87% 36%) 0px 7px 0px 0px;
+    background-color: hsl(210deg 100% 44%);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 31ms cubic-bezier(.5, .7, .4, 1);
+    margin: 0 auto;
+   }
+   
+   button:before {
+    content: attr(alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 4px;
+    opacity: 1;
+   }
+   
+   button:active {
+    box-shadow: none;
+    transform: translateY(7px);
+    transition: 35ms cubic-bezier(.5, .7, .4, 1);
+   }
+   
+   button:hover:before {
+    transition: all .0s;
+    transform: translateY(100%);
+    opacity: 0;
+   }
+   
+   button i {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-style: normal;
+    transition: all 2s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+   }
+   
+   button:hover i {
+    transition: all .2s ease;
+    transform: translateY(0px);
+    opacity: 1;
+   }
+   
+   button:hover i:nth-child(1) {
+    transition-delay: 0.045s;
+   }
+   
+   button:hover i:nth-child(2) {
+    transition-delay: calc(0.045s * 3);
+   }
+   
+   button:hover i:nth-child(3) {
+    transition-delay: calc(0.045s * 4);
+   }
+   
+   button:hover i:nth-child(4) {
+    transition-delay: calc(0.045s * 5);
+   }
+   
+   button:hover i:nth-child(6) {
+    transition-delay: calc(0.045s * 6);
+   }
+   
+   button:hover i:nth-child(7) {
+    transition-delay: calc(0.045s * 7);
+   }
+   
+   button:hover i:nth-child(8) {
+    transition-delay: calc(0.045s * 8);
+   }
+   
+   button:hover i:nth-child(9) {
+    transition-delay: calc(0.045s * 9);
+   }
+   
+   button:hover i:nth-child(10) {
+    transition-delay: calc(0.045s * 10);
+   }
